@@ -10,7 +10,7 @@ from xlwt import *
 import xlsxwriter
 
 # Read the Workbook
-workbook = pd.read_excel('Leviticus Series_SB.xlsx')
+workbook = pd.read_excel('Deuteronomy Series with Pastor Search Wednesday and Advent Selections EDIT 1.xlsx')
 workbook.head()
 
 # Create a new workbook and add a worksheet
@@ -24,7 +24,7 @@ i=0
 
 while item == True:
     #print(workbook.iloc[i].iloc[1])
-    text = workbook.iloc[i].iloc[1]
+    text = str(workbook.iloc[i].iloc[1])
     #print(text)
     conv = text.replace(' ', '+')
     passage = "https://www.biblegateway.com/passage/?search=" + conv + "&version=ESV"
